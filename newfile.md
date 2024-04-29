@@ -35,3 +35,21 @@
    It is responsible for reassembling the segments on the receiving end, turning it back into data that can be used by the
    session layer. The transport layer carries out flow control, sending data at a rate that matches the connection speed 
    of the receiving device, and error control, checking if data was received incorrectly and if not, requesting it again.
+
+ #  5 Session Layer
+
+   The session layer creates communication channels, called sessions, between devices. It is responsible for opening sessions, 
+   ensuring they remain open and functional while data is being transferred, and closing them when communication ends. 
+   The session layer can also set checkpoints during a data transfer—if the session is interrupted, devices can resume data transfer from the last checkpoint.
+
+ #  6 Presentation Layer
+
+   The presentation layer prepares data for the application layer. It defines how two devices should encode, encrypt, 
+   and compress data so it is received correctly on the other end. The presentation layer takes any data transmitted by the 
+   application layer and prepares it for transmission over the session layer.
+
+ #  7 Application Layer
+
+   The application layer is used by end-user software such as web browsers and email clients. It provides protocols that allow software 
+   to send and receive information and present meaningful data to users. A few examples of application layer protocols are the 
+   Hypertext Transfer Protocol (HTTP), File Transfer Protocol (FTP), Post Office Protocol (POP), Simple Mail Transfer Protocol (SMTP), and Domain Name System (DNS).
